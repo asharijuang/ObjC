@@ -17,6 +17,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *firstname = @"Ashari";
+    NSString *lastname = @"Juang";
+    
+    // %@ digunakan untuk mendapatkan nilai string, untuk integer menggunakan %d, sedangkan object %f
+    NSLog(@"hello my name, %@ %@", firstname, lastname);
+    
+    
+    // get main screen
+    UIScreen *screen = [UIScreen mainScreen];
+    // get bound
+    CGRect viewRect = [screen bounds];
+    NSLog(@"Tinggi layar adalah %f and lebar %f", viewRect.size.height, viewRect.size.width);
+    
     return YES;
 }
 

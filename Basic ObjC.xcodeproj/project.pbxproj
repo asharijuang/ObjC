@@ -418,6 +418,7 @@
 				5F6BC3601B6A0BE600D67C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F6BC3611B6A0BE600D67C3A /* Build configuration list for PBXNativeTarget "Basic ObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +427,7 @@
 				5F6BC3631B6A0BE600D67C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
