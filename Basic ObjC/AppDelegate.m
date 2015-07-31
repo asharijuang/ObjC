@@ -23,9 +23,47 @@
     // %@ digunakan untuk mendapatkan nilai string, untuk integer menggunakan %d, sedangkan object %f
     NSLog(@"hello my name, %@ %@", firstname, lastname);
     
-    // get bound
+    /*
+     Ada beberapa komponen yang dibutuhkan untuk membuat ios app
+     1. Window, seperti kita menggabar sesuatu di canvas.
+     2. Viewcontroller, kita dapat menggunakan kuas untuk menggambar di sebuah canvas,
+     3. view, seperti cat air atau warna yang akan menghiasi sebuah canvas.
+     */
+    
+    
+    // Window
+    // get bound from screen
     CGRect viewRect = [[UIScreen mainScreen] bounds];
+    
+    /* 
+     kita perlu mendelegasikan window secara manualy,
+     kita akan menuliskan seperti ini
+     UIWindow *window = [[UIWindow alloc] initWithFrame:viewRect];
+     Tapi appDelegate telah menjabarkannya  *window kenapa kita harus mengulanginya
+     kita hanya perlu meanggilnya seperti dengan self.window 
+    */
+    self.window = [[UIWindow alloc] initWithFrame:viewRect];
+    
+    // ViewController
+    UIViewController *colorTouchVC = [[UIViewController alloc] init];
+    /* 
+     color touch view controller akan menerima sebuah event dari keyboard atau touch yang nantinya akan memicu event lain
+     dengan cara makekeyandvisible
+    */
+    [self.window makeKeyAndVisible];
+    
+    // View
+    UIView *colorView = [[UIView alloc] initWithFrame:viewRect];
+    colorView.backgroundColor = [UIColor greenColor];
+    colorTouchVC.view = colorView;
+    
+    self.window.rootViewController = colorTouchVC;
+    
+    
     NSLog(@"Tinggi layar adalah %f and lebar %f", viewRect.size.height, viewRect.size.width);
+    
+    
+    
     
     return YES;
 }
