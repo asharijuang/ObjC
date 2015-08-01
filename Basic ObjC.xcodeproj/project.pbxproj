@@ -14,6 +14,8 @@
 		5F6BC34C1B6A0BE600D67C3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6BC34B1B6A0BE600D67C3A /* Images.xcassets */; };
 		5F6BC34F1B6A0BE600D67C3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F6BC34D1B6A0BE600D67C3A /* LaunchScreen.xib */; };
 		5F6BC35B1B6A0BE600D67C3A /* Basic_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BC35A1B6A0BE600D67C3A /* Basic_ObjCTests.m */; };
+		5F7C6A741B6C63A200455AD5 /* artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7C6A731B6C63A200455AD5 /* artist.m */; };
+		5F804A921B6C71E900E8027A /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F804A911B6C71E900E8027A /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		5F6BC3541B6A0BE600D67C3A /* Basic ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basic ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6BC3591B6A0BE600D67C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F6BC35A1B6A0BE600D67C3A /* Basic_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Basic_ObjCTests.m; sourceTree = "<group>"; };
+		5F7C6A721B6C63A200455AD5 /* artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = artist.h; sourceTree = "<group>"; };
+		5F7C6A731B6C63A200455AD5 /* artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = artist.m; sourceTree = "<group>"; };
+		5F804A901B6C71E900E8027A /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Album.h; path = "Basic ObjC/Album.h"; sourceTree = "<group>"; };
+		5F804A911B6C71E900E8027A /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Album.m; path = "Basic ObjC/Album.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 		5F6BC3321B6A0BE600D67C3A = {
 			isa = PBXGroup;
 			children = (
+				5F804A901B6C71E900E8027A /* Album.h */,
+				5F804A911B6C71E900E8027A /* Album.m */,
 				5F6BC33D1B6A0BE600D67C3A /* Basic ObjC */,
 				5F6BC3571B6A0BE600D67C3A /* Basic ObjCTests */,
 				5F6BC33C1B6A0BE600D67C3A /* Products */,
@@ -81,6 +89,8 @@
 		5F6BC33D1B6A0BE600D67C3A /* Basic ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				5F7C6A721B6C63A200455AD5 /* artist.h */,
+				5F7C6A731B6C63A200455AD5 /* artist.m */,
 				5F6BC3421B6A0BE600D67C3A /* AppDelegate.h */,
 				5F6BC3431B6A0BE600D67C3A /* AppDelegate.m */,
 				5F6BC3451B6A0BE600D67C3A /* ViewController.h */,
@@ -221,6 +231,8 @@
 			files = (
 				5F6BC3471B6A0BE600D67C3A /* ViewController.m in Sources */,
 				5F6BC3441B6A0BE600D67C3A /* AppDelegate.m in Sources */,
+				5F7C6A741B6C63A200455AD5 /* artist.m in Sources */,
+				5F804A921B6C71E900E8027A /* Album.m in Sources */,
 				5F6BC3411B6A0BE600D67C3A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
